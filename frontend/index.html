@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Telemetry Dashboard</title>
+</head>
+<body>
+    <h2>Add Vehicle</h2>
+    <input id="vname" placeholder="Vehicle Name">
+    <input id="vmodel" placeholder="Model">
+    <br><br>
+    <button onclick="addVehicle()">Add Vehicle</button>
+
+    <h2>Add Telemetry</h2>
+    <input id="vid" placeholder="Vehicle ID">
+    <input id="speed" placeholder="Speed">
+    <input id="fuel" placeholder="Fuel Level">
+    <input id="temp" placeholder="Engine Temp">
+    <br><br>
+    <button onclick="addTelemetry()">Add Telemetry</button>
+
+    <h2>View Telemetry</h2>
+    <input id="viewId" placeholder="Vehicle ID">
+    <br><br>
+    <button onclick="getTelemetry()">Get Telemetry</button>
+
+    <pre id="output" style="
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 120px;
+    background-color: #f9f9f9;
+"></pre>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
